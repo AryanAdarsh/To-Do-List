@@ -1,0 +1,240 @@
+body{
+    background-color: #191825;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pinky{
+    color: #FFA3FD;
+}
+.orc{
+    color: #FFDE59;
+}
+.purp{
+    background-color:#865DFF;
+}
+.wht{
+    color: #FFf;
+}
+
+/* Font */
+.Big-intro
+{
+    font-family: Secular one;
+}
+.Sub-intro{
+    font-family: fira sans;
+}
+/* Heading */
+.head-part{
+    margin: 5% 9%;
+}
+.i-size{
+    
+    font-size: 3.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.org{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.to-head{
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+/* Input field */
+.input-group{
+    margin: 4% auto;
+    /* color:#FFF */
+}
+#input-area{
+    color: #FFF;
+    background-color: #865DFF;
+    margin: 0%;
+    border: none;
+    font-family: oswald;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.75rem 0.75rem;
+    
+}
+.form-control{
+    color: #FFf;
+    outline: 0;
+}
+#input-area:focus{
+        outline: none;
+        box-shadow: none;
+      }
+::placeholder{
+    color: white !important;
+    opacity: 0.5 !important;
+}
+.btn-primary{
+    padding: 0 1rem;
+    border: none;
+    /* background-color: #865DFF; */
+}
+#submit:hover{
+    color: #865DFF;
+    background-color: #FFF;
+}
+#submit{
+    background-color: #865DFF;
+    color: #fff;
+}
+i{
+    font-size: medium;
+}
+/* List  */
+.card{
+    background-color:#8F43EE;
+    margin: 5% 30%;
+    border-radius: 0.5rem;
+    border: none;
+    transition: all .75s ease;
+    opacity: 1;
+}
+.card.show{
+    opacity: 0;
+    transition: all .75s ease;
+}
+.card-body
+{
+    background-color:#8F43EE;
+    border-radius: 0.45rem;
+    border: none;
+    color: white;
+    font-family: oswald;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: auto;
+    width: 80%;
+    /* transition: all .75s ease; */
+}
+#input-List{
+    width: 85%;
+}
+.card-body:focus{
+    outline: none;
+    box-shadow: none;
+}
+.item{
+    background-color: #191825;
+    border: none;
+}
+.content{
+    margin-bottom: 1%;
+    background-color: #8F43EE;
+    border: none;
+    border-radius: 0.45rem;
+}
+.list-only{
+    float:right;
+    background-color: #8F43EE;
+    color: #fff;
+    border-radius: 0.2rem;
+    border: none;
+    margin: 3% 1% 0 2%;
+    /* padding-left:0.6rem; */
+}
+.list-only:hover{
+    background-color: #FFF;
+    color: #8F43EE;
+}
+/* Animation for input area */
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+/* Animation */
+
+@-webkit-keyframes blinker {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+  }
+  .blink{
+      text-decoration: blink;
+      -webkit-animation-name: blinker;
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-timing-function:ease-in-out;
+      -webkit-animation-direction: alternate;
+  }
+
+  @media screen and (max-width:600px){
+    .card-body{
+        width: 10%;
+        }
+        .card{
+            margin: 6% 50%;
+        }
+        .content{
+            padding-right: 2%;
+            margin-bottom: 3%;
+        }
+        .list-only{
+            margin: 0%;
+            float: none;
+            padding-left: 0.12rem;
+        }
+        i{
+            font-size: small;
+        }
+        .edit{
+            flex: r;
+        }
+  }
+  @media screen and (max-width:900px){
+    .card-body{
+    width: 50%;
+    } 
+    .card{
+        margin: 6% 20%;
+    }
+    .list-only{
+        margin: 0;
+        margin-top: 1rem;
+    }
+  }
+  @media screen and (max-width:1000px){
+    /* .card-body{
+        width: 10%;
+        } */
+        /* .card{
+            margin: 10% 20%;
+        } */
+        .list-only{
+            margin: 0;
+            margin-top: 3%;
+            margin-right: 1%;
+            /* margin-left: 2%; */
+        }
+  }
+  @media screen and (max-width:450px)
+  {
+    .list-only{
+        margin: 0;
+        padding: 1rem;
+    }
+  }
+@media screen and (max-width:1500px)
+{
+    .list-only{
+        margin: 0;
+        margin-top: 3%;
+        margin-right: 1%;
+    }
+}
